@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-15: localStorage</title>
+  <style>
+    body { font-family: system-ui; max-width: 500px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #10b981; }
+    input, button { padding: 0.5rem; margin: 0.3rem 0; }
+    button { background: #10b981; color: white; border: none; border-radius: 6px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <nav><a href="../index.html">Home</a> <a href="index.html">Back to JS</a></nav>
+  <h1>localStorage Demo</h1>
+  <input type="text" id="name" placeholder="Enter your name">
+  <br>
+  <button onclick="save()">Save</button>
+  <button onclick="load()">Load</button>
+  <button onclick="clearData()">Clear</button>
+  <p id="out"></p>
+  <script>
+    function save() {
+      localStorage.setItem('username', document.getElementById('name').value);
+      document.getElementById('out').textContent = 'Saved!';
+    }
+    function load() {
+      const v = localStorage.getItem('username');
+      document.getElementById('out').textContent = v ? 'Hello, ' + v : 'No data stored';
+    }
+    function clearData() {
+      localStorage.removeItem('username');
+      document.getElementById('out').textContent = 'Cleared';
+    }
+  </script>
+</body>
+</html>

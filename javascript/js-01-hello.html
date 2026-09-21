@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-01: Hello World</title>
+  <style>
+    body { font-family: system-ui; max-width: 600px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #10b981; }
+    #out { font-size: 1.5rem; color: #059669; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <nav><a href="../index.html">Home</a> <a href="index.html">Back to JS</a></nav>
+  <h1>Hello World</h1>
+  <p>JavaScript writes the message below.</p>
+  <div id="out"></div>
+  <script>
+    document.getElementById('out').textContent = 'Hello World';
+    console.log('Hello World');
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-11: Show / Hide</title>
+  <style>
+    body { font-family: system-ui; max-width: 500px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #10b981; }
+    #box { background: #d1fae5; padding: 1.5rem; border-radius: 10px; margin: 1rem 0; }
+    button { padding: 0.5rem 1rem; background: #10b981; color: white; border: none; border-radius: 6px; cursor: pointer; margin-right: 0.5rem; }
+  </style>
+</head>
+<body>
+  <nav><a href="../index.html">Home</a> <a href="index.html">Back to JS</a></nav>
+  <h1>Show / Hide Element</h1>
+  <div id="box">This box can be hidden or shown.</div>
+  <button onclick="document.getElementById('box').style.display='none'">Hide</button>
+  <button onclick="document.getElementById('box').style.display='block'">Show</button>
+</body>
+</html>

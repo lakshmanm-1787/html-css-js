@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-16: Theme Switcher</title>
+  <style>
+    :root { --bg: #f8fafc; --text: #1e293b; --card: #fff; }
+    [data-theme="dark"] { --bg: #0f172a; --text: #f1f5f9; --card: #1e293b; }
+    body { font-family: system-ui; background: var(--bg); color: var(--text); margin: 0; padding: 1.5rem; transition: 0.3s; }
+    nav a { margin-right: 1rem; color: #10b981; }
+    .card { background: var(--card); padding: 1.5rem; border-radius: 12px; margin-top: 1rem; max-width: 400px; }
+    button { padding: 0.6rem 1.2rem; background: #10b981; color: white; border: none; border-radius: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <nav><a href="../index.html">Home</a> <a href="index.html">Back to JS</a></nav>
+  <h1>Dark / Light Theme</h1>
+  <div class="card">
+    <p>Theme preference is saved in localStorage.</p>
+    <button onclick="toggle()">Toggle Theme</button>
+  </div>
+  <script>
+    const saved = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', saved);
+    function toggle() {
+      const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-12: Counter</title>
+  <style>
+    body { font-family: system-ui; max-width: 400px; margin: 2rem auto; padding: 0 1rem; text-align: center; }
+    nav a { margin-right: 1rem; color: #10b981; }
+    #count { font-size: 3rem; font-weight: 700; margin: 1.5rem 0; }
+    button { padding: 0.6rem 1.2rem; margin: 0.3rem; border: none; border-radius: 8px; cursor: pointer; font-size: 1.1rem; }
+    .inc { background: #10b981; color: white; }
+    .dec { background: #ef4444; color: white; }
+    .reset { background: #64748b; color: white; }
+  </style>
+</head>
+<body>
+  <nav style="text-align:left"><a href="../index.html">Home</a> <a href="index.html">Back to JS</a></nav>
+  <h1>Counter</h1>
+  <div id="count">0</div>
+  <button class="dec" onclick="update(-1)">−</button>
+  <button class="reset" onclick="update(0, true)">Reset</button>
+  <button class="inc" onclick="update(1)">+</button>
+  <script>
+    let value = 0;
+    function update(delta, reset) {
+      if (reset) value = 0;
+      else value += delta;
+      document.getElementById('count').textContent = value;
+    }
+  </script>
+</body>
+</html>

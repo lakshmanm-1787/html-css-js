@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS-07: Prime</title>
+  <style>
+    body { font-family: system-ui; max-width: 500px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #10b981; }
+    input, button { padding: 0.5rem; margin: 0.3rem; }
+    button { background: #10b981; color: white; border: none; border-radius: 6px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <nav><a href="../index.html">Home</a> <a href="index.html">Back to JS</a></nav>
+  <h1>Prime Number Check</h1>
+  <input type="number" id="n" value="17">
+  <button onclick="isPrime()">Check</button>
+  <p id="out"></p>
+  <script>
+    function isPrime() {
+      const n = Number(document.getElementById('n').value);
+      if (n < 2) { document.getElementById('out').textContent = n + ' is not prime'; return; }
+      for (let i = 2; i * i <= n; i++) {
+        if (n % i === 0) { document.getElementById('out').textContent = n + ' is not prime'; return; }
+      }
+      document.getElementById('out').textContent = n + ' is prime';
+    }
+  </script>
+</body>
+</html>
