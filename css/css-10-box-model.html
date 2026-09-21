@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-10: Box Model</title>
+  <style>
+    body { font-family: system-ui; max-width: 700px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #7c3aed; }
+    .box {
+      width: 200px;
+      padding: 20px;
+      border: 10px solid #3b82f6;
+      margin: 30px;
+      background: #dbeafe;
+    }
+    .label { font-size: 0.85rem; color: #64748b; }
+  </style>
+</head>
+<body>
+  <nav><a href="../index.html">Home</a> <a href="index.html">Back to CSS</a></nav>
+  <h1>CSS Box Model</h1>
+  <p class="label">Content → Padding (20px) → Border (10px) → Margin (30px)</p>
+  <div class="box">
+    Content area<br>
+    width: 200px<br>
+    + padding + border
+  </div>
+</body>
+</html>

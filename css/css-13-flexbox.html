@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-13: Flexbox</title>
+  <style>
+    body { font-family: system-ui; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #7c3aed; }
+    .row { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
+    .item { flex: 1 1 150px; background: #8b5cf6; color: white; padding: 1.5rem; border-radius: 10px; text-align: center; }
+    .center { display: flex; justify-content: center; align-items: center; height: 100px; background: #f1f5f9; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <nav><a href="../index.html">Home</a> <a href="index.html">Back to CSS</a></nav>
+  <h1>Responsive Flexbox</h1>
+  <div class="row">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+  </div>
+  <div class="center">Centered with Flexbox</div>
+</body>
+</html>

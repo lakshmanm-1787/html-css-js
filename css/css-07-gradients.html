@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-07: Gradients</title>
+  <style>
+    body { font-family: system-ui; max-width: 700px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #7c3aed; }
+    .grad { height: 100px; border-radius: 12px; margin: 1rem 0; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; }
+    .linear { background: linear-gradient(90deg, #3b82f6, #8b5cf6); }
+    .linear-diag { background: linear-gradient(135deg, #f59e0b, #ef4444); }
+    .radial { background: radial-gradient(circle, #22c55e, #0f766e); }
+  </style>
+</head>
+<body>
+  <nav><a href="../index.html">Home</a> <a href="index.html">Back to CSS</a></nav>
+  <h1>Linear & Radial Gradients</h1>
+  <div class="grad linear">Linear 90°</div>
+  <div class="grad linear-diag">Linear 135°</div>
+  <div class="grad radial">Radial</div>
+</body>
+</html>

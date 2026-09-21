@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-06: Borders</title>
+  <style>
+    body { font-family: system-ui; max-width: 700px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #7c3aed; }
+    .box { padding: 1rem; margin: 0.8rem 0; }
+    .solid { border: 3px solid #3b82f6; }
+    .dashed { border: 3px dashed #ef4444; }
+    .dotted { border: 3px dotted #22c55e; }
+    .double { border: 4px double #a855f7; }
+    .radius { border: 2px solid #0ea5e9; border-radius: 16px; }
+    .circle { width: 80px; height: 80px; border-radius: 50%; background: #8b5cf6; color: white; display: flex; align-items: center; justify-content: center; }
+  </style>
+</head>
+<body>
+  <nav><a href="../index.html">Home</a> <a href="index.html">Back to CSS</a></nav>
+  <h1>Borders & Border-radius</h1>
+  <div class="box solid">Solid border</div>
+  <div class="box dashed">Dashed border</div>
+  <div class="box dotted">Dotted border</div>
+  <div class="box double">Double border</div>
+  <div class="box radius">Rounded corners (border-radius)</div>
+  <div class="circle">Circle</div>
+</body>
+</html>
