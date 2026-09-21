@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML-07: Frames / iframes</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #2563eb; }
+    hr { margin: 1.5rem 0; border: none; border-top: 1px solid #ddd; }
+    iframe { width: 100%; height: 300px; border: 2px solid #cbd5e1; border-radius: 8px; margin: 0.5rem 0; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to HTML Programs</a>
+  </nav>
+  <hr>
+  <h1>Frames / iframes</h1>
+  <p><strong>Description:</strong> Embedding another page using the &lt;iframe&gt; element. (Classic framesets are obsolete.)</p>
+  <hr>
+
+  <h2>Embedded Wikipedia (iframe)</h2>
+  <iframe src="https://en.wikipedia.org/wiki/HTML" title="Wikipedia HTML page"></iframe>
+
+  <h2>Embedded map example</h2>
+  <iframe
+    src="https://www.openstreetmap.org/export/embed.html?bbox=77.5%2C12.9%2C77.7%2C13.1&amp;layer=mapnik"
+    title="OpenStreetMap"></iframe>
+</body>
+</html>

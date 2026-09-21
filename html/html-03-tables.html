@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML-03: Tables</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #2563eb; }
+    hr { margin: 1.5rem 0; border: none; border-top: 1px solid #ddd; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #333; padding: 10px; text-align: center; }
+    th { background: #1e40af; color: white; }
+    .merged { background: #e0e7ff; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to HTML Programs</a>
+  </nav>
+  <hr>
+  <h1>HTML Tables – Rows, Columns, Borders & Merged Cells</h1>
+  <p><strong>Description:</strong> Table with borders, header, and cells merged using rowspan / colspan.</p>
+  <hr>
+
+  <table>
+    <caption><strong>Student Marks Report</strong></caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Math</th>
+        <th>Science</th>
+        <th>English</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Aarav</td>
+        <td>85</td>
+        <td>90</td>
+        <td>78</td>
+        <td rowspan="2" class="merged">163 / 168<br>(Aarav + Priya)</td>
+      </tr>
+      <tr>
+        <td>Priya</td>
+        <td>88</td>
+        <td>82</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="merged">Class Average (Math + Science + English)</td>
+        <td>84.5</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

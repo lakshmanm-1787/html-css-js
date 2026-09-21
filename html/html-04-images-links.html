@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML-04: Images & Links</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 700px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+    nav a { margin-right: 1rem; color: #2563eb; }
+    hr { margin: 1.5rem 0; border: none; border-top: 1px solid #ddd; }
+    img { max-width: 100%; height: auto; border-radius: 8px; margin: 0.5rem 0; }
+    .demo-box { background: #f1f5f9; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to HTML Programs</a>
+  </nav>
+  <hr>
+  <h1>Images and Hyperlinks</h1>
+  <p><strong>Description:</strong> Using &lt;img&gt; and &lt;a&gt; tags.</p>
+  <hr>
+
+  <h2>Image (placeholder)</h2>
+  <p>Below is a placeholder image from a public source:</p>
+  <img src="https://picsum.photos/400/250" alt="Sample landscape photo" width="400" height="250">
+
+  <h2>Hyperlinks</h2>
+  <div class="demo-box">
+    <p><a href="https://www.w3.org/" target="_blank" rel="noopener">Visit W3C (opens in new tab)</a></p>
+    <p><a href="html-01-basic.html">Link to another local program (Basic HTML)</a></p>
+    <p><a href="#bottom">Jump to bottom of this page</a></p>
+  </div>
+
+  <p style="margin-top:4rem;">Scroll down…</p>
+  <p style="margin-top:8rem;" id="bottom">You have reached the bottom of the page.</p>
+</body>
+</html>

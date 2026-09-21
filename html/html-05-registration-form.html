@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML-05: Student Registration Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 520px; margin: 2rem auto; padding: 0 1rem; }
+    nav a { margin-right: 1rem; color: #2563eb; }
+    hr { margin: 1.5rem 0; border: none; border-top: 1px solid #ddd; }
+    form { background: #f8fafc; padding: 1.5rem; border-radius: 10px; border: 1px solid #e2e8f0; }
+    label { display: block; margin-top: 0.8rem; font-weight: 600; }
+    input, select, textarea { width: 100%; padding: 0.5rem; margin-top: 0.3rem; border: 1px solid #cbd5e1; border-radius: 6px; }
+    button { margin-top: 1.2rem; padding: 0.6rem 1.4rem; background: #2563eb; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; }
+    button:hover { background: #1d4ed8; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">Back to HTML Programs</a>
+  </nav>
+  <hr>
+  <h1>Student Registration Form</h1>
+  <p><strong>Description:</strong> HTML form with common input elements.</p>
+  <hr>
+
+  <form action="#" method="post">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required placeholder="Enter full name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required placeholder="student@example.com">
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" placeholder="10-digit number">
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob">
+
+    <label for="course">Course</label>
+    <select id="course" name="course">
+      <option value="">-- Select Course --</option>
+      <option value="bca">BCA</option>
+      <option value="bsc">B.Sc</option>
+      <option value="bcom">B.Com</option>
+      <option value="ba">B.A</option>
+    </select>
+
+    <label>Gender</label>
+    <label style="display:inline; font-weight:normal;"><input type="radio" name="gender" value="male"> Male</label>
+    <label style="display:inline; font-weight:normal; margin-left:1rem;"><input type="radio" name="gender" value="female"> Female</label>
+    <label style="display:inline; font-weight:normal; margin-left:1rem;"><input type="radio" name="gender" value="other"> Other</label>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" rows="3" placeholder="Enter address"></textarea>
+
+    <label style="font-weight:normal;"><input type="checkbox" name="agree" required> I agree to the terms and conditions</label>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

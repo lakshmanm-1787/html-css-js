@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Programs</title>
+  <style>
+    :root { --bg:#0f172a; --card:#1e293b; --accent:#3b82f6; --text:#f1f5f9; --muted:#94a3b8; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; padding:2rem 1rem; }
+    .container { max-width:800px; margin:0 auto; }
+    nav { margin-bottom:1.5rem; }
+    nav a { color:var(--accent); text-decoration:none; margin-right:1rem; font-weight:500; }
+    nav a:hover { text-decoration:underline; }
+    h1 { font-size:1.9rem; margin-bottom:0.4rem; }
+    .sub { color:var(--muted); margin-bottom:2rem; }
+    ol { list-style:none; counter-reset:item; }
+    li { counter-increment:item; background:var(--card); margin-bottom:0.6rem; border-radius:10px; border:1px solid rgba(255,255,255,0.06); }
+    li a { display:block; padding:1rem 1.2rem; color:var(--text); text-decoration:none; transition:background 0.2s; }
+    li a:hover { background:rgba(59,130,246,0.15); }
+    li a::before { content: counter(item) ". "; color:var(--accent); font-weight:700; margin-right:0.4rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="../index.html">← Home</a>
+    </nav>
+    <h1>HTML Programs</h1>
+    <p class="sub">15 foundational HTML experiments</p>
+    <ol>
+      <li><a href="html-01-basic.html">Basic HTML webpage (headings, paragraphs, line breaks)</a></li>
+      <li><a href="html-02-lists.html">Ordered, unordered & description lists</a></li>
+      <li><a href="html-03-tables.html">Tables with rows, columns, borders & merged cells</a></li>
+      <li><a href="html-04-images-links.html">Images and hyperlinks</a></li>
+      <li><a href="html-05-registration-form.html">Student registration form</a></li>
+      <li><a href="html-06-audio-video.html">Audio and video elements</a></li>
+      <li><a href="html-07-frames.html">Frames / iframes</a></li>
+      <li><a href="html-08-semantic.html">Semantic elements (header, nav, section, article, footer)</a></li>
+      <li><a href="html-09-input-types.html">HTML5 input types (email, date, number, password)</a></li>
+      <li><a href="html-10-timetable.html">College timetable using HTML table</a></li>
+      <li><a href="html-11-css-styling.html">Internal and external CSS styling</a></li>
+      <li><a href="html-12-selectors.html">CSS selectors, colors, fonts, margins, padding, borders</a></li>
+      <li><a href="html-13-media-queries.html">Responsive webpage with CSS media queries</a></li>
+      <li><a href="html-14-bootstrap.html">Bootstrap components</a></li>
+      <li><a href="html-15-portfolio.html">Simple personal portfolio (HTML + CSS)</a></li>
+    </ol>
+  </div>
+</body>
+</html>
