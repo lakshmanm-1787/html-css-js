@@ -2,9 +2,9 @@
 
 ## Student Information
 
-- **Student Name:** ________________________
-- **Register Number:** ________________________
-- **Class / Section:** ________________________
+- **Student Name:** M.LAKSHMAN
+- **Register Number:** 250200212
+- **Class / Section:** 6
 - **Subject:** Web Technologies / HTML CSS JavaScript Lab
 - **Assignment:** Practical Programs Website (from Experiments list)
 
