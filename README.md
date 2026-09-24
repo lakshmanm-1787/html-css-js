@@ -14,7 +14,7 @@
 |---------------|-------|
 | HTML          | 15    |
 | CSS           | 2     |
-| JavaScript    | 25    |
+| JavaScript    | 259    |
 | **Total**     | **60**|
 
 ## Project Structure
