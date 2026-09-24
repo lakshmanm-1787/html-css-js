@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Programs</title>
+  <style>
+    :root { --bg:#0f172a; --card:#1e293b; --accent:#8b5cf6; --text:#f1f5f9; --muted:#94a3b8; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); min-height:100vh; padding:2rem 1rem; }
+    .container { max-width:800px; margin:0 auto; }
+    nav a { color:var(--accent); text-decoration:none; margin-right:1rem; font-weight:500; }
+    nav a:hover { text-decoration:underline; }
+    h1 { font-size:1.9rem; margin:1rem 0 0.4rem; }
+    .sub { color:var(--muted); margin-bottom:1.5rem; }
+    h2 { font-size:1.1rem; color:var(--accent); margin:1.5rem 0 0.6rem; }
+    ol { list-style:none; counter-reset:item; }
+    li { counter-increment:item; background:var(--card); margin-bottom:0.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.06); }
+    li a { display:block; padding:0.85rem 1.1rem; color:var(--text); text-decoration:none; }
+    li a:hover { background:rgba(139,92,246,0.15); }
+    li a::before { content: counter(item) ". "; color:var(--accent); font-weight:700; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav><a href="../index.html">← Home</a></nav>
+    <h1>CSS Programs</h1>
+    <p class="sub">Foundation & Core UI + selected modern demos</p>
+
+    <h2>CSS Foundation</h2>
+    <ol>
+      <li><a href="css-01-inline-internal-external.html">Inline, Internal & External CSS</a></li>
+      <li><a href="css-02-selectors.html">Universal, Element, Class, ID, Attribute, Grouping selectors</a></li>
+      <li><a href="css-03-combinators.html">Descendant, Child, Adjacent & General Sibling selectors</a></li>
+      <li><a href="css-04-colors.html">CSS colors for text, backgrounds, borders</a></li>
+      <li><a href="css-05-backgrounds.html">Background images, colors, position, size, repeat</a></li>
+      <li><a href="css-06-borders.html">Border styles, widths, colors & border-radius</a></li>
+      <li><a href="css-07-gradients.html">Linear & Radial gradients</a></li>
+      <li><a href="css-08-fonts.html">Font-family, size, weight, style, variant</a></li>
+      <li><a href="css-09-text.html">Text alignment, decoration, transform, spacing</a></li>
+      <li><a href="css-10-box-model.html">CSS Box Model (content, padding, border, margin)</a></li>
+      <li><a href="css-11-display.html">Display: block, inline, inline-block, flex, grid, none</a></li>
+      <li><a href="css-12-positioning.html">Static, relative, absolute, fixed, sticky</a></li>
+      <li><a href="css-13-flexbox.html">Responsive Flexbox layout</a></li>
+      <li><a href="css-14-grid.html">Responsive CSS Grid layout</a></li>
+      <li><a href="css-15-transitions-transforms.html">Transitions & 2D transforms</a></li>
+      <li><a href="css-16-animations.html">Keyframe animations & loading spinner</a></li>
+      <li><a href="css-17-shadows.html">Box-shadow & text-shadow</a></li>
+      <li><a href="css-18-variables.html">CSS variables & dark mode</a></li>
+      <li><a href="css-19-media-queries.html">Responsive design with media queries</a></li>
+      <li><a href="css-20-saas-card.html">SaaS Card component</a></li>
+    </ol>
+  </div>
+</body>
+</html>
