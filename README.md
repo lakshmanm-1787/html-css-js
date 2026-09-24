@@ -13,7 +13,7 @@
 | Section       | Count |
 |---------------|-------|
 | HTML          | 15    |
-| CSS           | 20    |
+| CSS           | 2     |
 | JavaScript    | 25    |
 | **Total**     | **60**|
 
