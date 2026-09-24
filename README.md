@@ -1,69 +1,25 @@
-# HTML, CSS & JavaScript – Practical Programs
+# HTML-CSS-JS Practical Programs
 
-## Student Information
+Complete browser-based practical project generated from the supplied Experiements.pdf.
 
-- **Student Name:** M.LAKSHMAN
-- **Register Number:** 250200212
-- **Class / Section:** 6
-- **Subject:** Web Technologies / HTML CSS JavaScript Lab
-- **Assignment:** Practical Programs Website (from Experiments list)
+## Sections
+- HTML: 15 experiments
+- CSS: 75 experiments
+- JavaScript: 65 experiments
+- DOM Manipulation: 50 experiments
+- JavaScript Events: 30 experiments
+- Forms and Validation: 40 experiments
+- Browser Objects & Browser Features: 20 experiments
+- Web Storage: 25 experiments
+- Mini Projects: 17 experiments
 
-## Total Programs Completed
+Total experiments: 337
 
-| Section       | Count |
-|---------------|-------|
-| HTML          | 15    |
-| CSS           | 2     |
-| JavaScript    | 259    |
-| **Total**     | **60**|
+## Student details
+- Student Name: A.Ganesh Abhiram
+- Register Number: 250200436
+- Class/Section: SCDS, Sec-5
+- Subject: Web Technology & Internet Programming
 
-## Project Structure
-
-```
-project/
-├── index.html                 # Main dashboard (3 cards)
-├── README.md
-├── html/
-│   ├── index.html             # HTML program list
-│   ├── html-01-basic.html
-│   ├── html-02-lists.html
-│   ... (15 files)
-├── css/
-│   ├── index.html             # CSS program list
-│   ├── css-01-... to css-20-...
-└── javascript/
-    ├── index.html             # JS program list
-    ├── js-01-... to js-25-...
-```
-
-## How to Use
-
-1. Open `index.html` in any modern browser.
-2. Click **View HTML / CSS / JS Programs** to open the section lists.
-3. Click any program link to open and run it.
-4. Every program page has **Home** and **Back to Programs** navigation.
-
-## Coverage
-
-### HTML (15)
-Basic page, lists, tables, images/links, registration form, audio/video, iframes, semantic elements, HTML5 inputs, college timetable, internal/external CSS, selectors demo, media queries, Bootstrap, personal portfolio.
-
-### CSS (20)
-Inline/internal/external, selectors, combinators, colors, backgrounds, borders, gradients, fonts, text properties, box model, display, positioning, flexbox, grid, transitions/transforms, animations, shadows, CSS variables + dark mode, media queries, SaaS card component.
-
-### JavaScript (25)
-Hello World, arithmetic, largest of 3, even/odd, factorial, Fibonacci, prime, palindrome, change text, background color, show/hide, counter, form validation, password strength, localStorage, theme switcher, calculator, digital clock, stopwatch, countdown, to-do list, quiz, number guessing game, BMI calculator, password generator.
-
-## Notes
-
-- All programs are separate HTML files (no combined single-page apps for the assignment list).
-- External resources (Bootstrap CDN, demo media, placeholder images) require internet for those specific demos.
-- Mini projects that use localStorage work offline after first load.
-- Fill in your name and register number in this README before submission.
-
-## Instructions Followed
-
-- Separate file per program
-- Working navigation throughout
-- Meaningful file names and comments where helpful
-- Runnable by opening HTML files in a browser
+## Assignments
+By Opening the project folder in VS Code and running `index.html` with Live Server, I can confirm that I have succesfully completed all the programs in experiments file. Please check for your reference
