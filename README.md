@@ -16,9 +16,9 @@ Complete browser-based practical project generated from the supplied Experiement
 Total experiments: 337
 
 ## Student details
-- Student Name: A.Ganesh Abhiram
-- Register Number: 250200436
-- Class/Section: SCDS, Sec-5
+- Student Name: M.LAKSHMAN
+- Register Number: 250200212
+- Class/Section: SCDS, Sec-6
 - Subject: Web Technology & Internet Programming
 
 ## Assignments
